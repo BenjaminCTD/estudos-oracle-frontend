@@ -1,0 +1,22 @@
+<script>
+function pulaLinha() {
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+}
+
+function calculaImc(altura, peso){
+	var imc = peso / (altura * altura);
+    return imc;
+}
+
+    var imcPri = calculaImc(1.75, 90);
+    var imcBen = calculaImc(1.89, 107);
+
+        mostra(imcPri);
+        mostra(imcBen);
+
+</script>

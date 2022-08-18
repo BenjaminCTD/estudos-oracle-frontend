@@ -1,0 +1,23 @@
+<script>
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+    
+    function mostra(frase) {
+        document.write("<big>" + frase + "</big>");
+            pulaLinha();
+    }
+
+    var limite = 100
+
+    var inicio = 0
+
+        while( inicio <= limite){
+
+            mostra("Este numero é par: " + inicio)
+
+                inicio = inicio + 2;
+
+        }
+    mostra("fim")
+</script>
